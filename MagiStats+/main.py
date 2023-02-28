@@ -3,14 +3,12 @@ from discord import app_commands
 import json
 import datetime
 import os
-import asyncio
 import aiohttp
 from discord.ui import View
 from discord import ui
 from Core import GetStatsEmed
 from discord.ext import tasks
 from dotenv import load_dotenv
-import sqlite3
 
 load_dotenv()
         
