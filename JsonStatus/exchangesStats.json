@@ -1,6 +1,6 @@
 {
     "btcpop":"ok",
-    "ducoexchange":"Not Working 🟨",
+    "ducoexchange":"warn",
     "fluffy":"ok",
-    "moondex":"Offline 🟥"
+    "moondex":"off"
 }
