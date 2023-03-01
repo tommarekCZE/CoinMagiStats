@@ -45,7 +45,11 @@ tree = app_commands.CommandTree(client)
 
 
 
+<<<<<<< HEAD
 discord_token = "token"
+=======
+discord_token = "Your token"
+>>>>>>> 64fcadf1b47cc05a9916db02179c780845237a2f
 
 @tree.command(name="ping", description="Get Latency")
 async def ping(interaction: discord.Interaction):
