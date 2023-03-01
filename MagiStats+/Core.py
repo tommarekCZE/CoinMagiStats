@@ -1,5 +1,6 @@
 import aiohttp
 import discord
+import datetime
 
 async def GetStatsEmed():
     async with aiohttp.ClientSession() as session:
@@ -31,7 +32,11 @@ async def GetStatsEmed():
         print(data['result']['users'])
         print(data['success'])
 
-        embed = discord.Embed(title="Coin Magi Stats")
+        embed = discord.Embed(title="Coin Magi Stats", color=0x00ffee)
+
+        datetimeObject = datetime.datetime.now()
+
+        timeObject = datetimeObject.time()
 
         embed.add_field(name="Total Hashrate ⛏", value=f"{data['result']['hashrate']} H/s")
         embed.add_field(name="Total Blocks 🧱", value=f"{data['result']['blocks']}")
@@ -46,6 +51,6 @@ async def GetStatsEmed():
         embed.add_field(name="Price - BTCpop ₿", value=f"{float(data['result']['price']['btcpop'])} $")
         embed.add_field(name="Price - Moondex 🌙", value=f"{float(data['result']['price']['moondex'])} $")
 
-        embed.set_footer(text=f"This message get updated every 60 Seconds")
+        embed.set_footer(text=f"This message get updated every 60 Seconds - Last Updated: {timeObject}")
 
         return embed

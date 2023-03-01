@@ -1,0 +1,18 @@
+{
+    "fields": [
+      {
+        "label": "Changelog Name",
+        "style": "short",
+        "placeholder": "Example: Faceuet Update",
+        "required": true
+      },
+      {
+        "label": "Changelog Description",
+        "style": "long",
+        "placeholder": "Example: Faceuet is cool and we added it!!",
+        "required": true
+      }
+    ],
+    "ModalName": "New changelog submit",
+    "ModalResponse": "New changelog has been sent"
+  }
