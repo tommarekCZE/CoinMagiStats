@@ -1,0 +1,7 @@
+localhost
+1321
+=================
+First line represents the pool IP address.
+Second line is the pool port.
+Other lines aren't used.
+http://localhost:1321/
