@@ -84,8 +84,8 @@ async def about(interaction: discord.Interaction):
   latency = round(client.latency * 1000)
   embed = discord.Embed(title='🗨 About 🗨', description=f'The `Magi Stats+` is bot that connect your server with Coin Magi!')
   embed.add_field(name="👁‍🗨 Future Plans 👁‍🗨", value="1. Let users manage Magi account trought Discordn\n2. Add Coin Magi Faceuet")
-  embed.add_field(name="💳 Credits 💳", value="1. [Duino Coin Magi API for fetching stats](https://magi.duinocoin.com/\n2. [tommarek#1245 | Head Developer](https://github.com/tommarekCZE)")
-  embed.add_field(name="📃 Source Code 📃", value="[tommarekCZE/CoinMagiStats](https://github.com/tommarekCZE/CoinMagiStats)")
+  embed.add_field(name="💳 Credits 💳", value="1. [Duino Coin Magi API for fetching stats](https://magi.duinocoin.com/\n2. [tomasthedev | Head Developer](https://github.com/tomasthedev)")
+  embed.add_field(name="📃 Source Code 📃", value="[tomasthedev/CoinMagiStats](https://github.com/tomasthedev/CoinMagiStats)")
   await interaction.response.send_message(embed=embed, ephemeral=True)
 
 @tree.command(name="setup", description="Setup Statiscics")
